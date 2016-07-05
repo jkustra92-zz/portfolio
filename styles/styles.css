@@ -4,14 +4,14 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 25px;
   color: #43bd8e;
   text-align: center;
 }
 
 
 h3 {
-  font-size: 25px;
+  font-size: 15px;
   color: #467b8d;
   text-align: center;
 }
@@ -22,7 +22,8 @@ ul {
 }
 
 li {
-  font-size: 20px;
+  font-size: 15px;
+  margin-top: 2em;
   padding-left: 2em;
   padding-right: 4em;
   text-align: center;
@@ -40,8 +41,13 @@ a:hover {
 }
 
 img {
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: 150px;
+}
+
+img.desaturate { 
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 #container {
@@ -52,4 +58,25 @@ img {
 p {
   margin-top: 2em;
   color: #b1bab5;
+}
+
+/*Media Queries*/
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+
+  img {
+    width: 500px;
+    height: 300px;
+    -webkit-filter: grayscale(1)
+  }
+
+  li {
+    font-size: 20px;
+  }
 }
